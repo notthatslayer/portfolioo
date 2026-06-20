@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+      },
+      colors: {
+        emeraldDeep: {
+          950: '#02140d',
+          900: '#041b12',
+          800: '#07261a',
+          700: '#0b3524',
+          600: '#0f4a32',
+          500: '#11b56b'
+        }
+      },
+      boxShadow: {
+        glow: '0 0 0 1px rgba(16,185,129,0.18), 0 20px 80px rgba(0,0,0,0.45), 0 0 40px rgba(16,185,129,0.12)'
+      }
+    }
+  }
+}
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans selection:bg-emerald-400/30 selection:text-white">
+<div class="fixed inset-0 pointer-events-none grid-bg opacity-30"></div>
+<header class="sticky top-0 z-40 border-b border-white/8 bg-black/25 backdrop-blur-xl">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="flex items-center justify-between py-4">
+      <a href="index.html" class="text-left">
+        <div class="text-lg md:text-xl font-semibold tracking-tight">
+          Tayyaba Shaikh
+        </div>
+        <div class="text-xs text-emerald-200/70">
+          Frontend Developer • Content Writer • BSc IT
+        </div>
+      </a>
+      <nav class="flex flex-wrap items-center justify-end gap-4 md:gap-7 text-sm text-emerald-50/80">
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="skills.html">Skills</a>
+        <a class="nav-link" href="journey.html">Journey</a>
+        <a class="nav-link" href="facts.html">Facts</a>
+        <a class="nav-link" href="links.html">Links</a>
+        <a class="nav-link" href="blogs.html">Blogs</a>
+        <a class="nav-link" href="certificates.html">Certificates</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<main>
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0">
+    <div class="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-emerald-400/20 blur-3xl animate-drift"></div>
+    <div class="absolute top-24 right-0 h-80 w-80 rounded-full bg-emerald-500/10 blur-3xl animate-floaty"></div>
+    <div class="absolute bottom-0 left-1/2 h-72 w-72 rounded-full bg-emerald-300/10 blur-3xl animate-pulseGlow"></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 pt-20 md:pt-28 pb-16 md:pb-24 relative">
+    <div class="grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7 reveal">
+        <div class="inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm text-emerald-100/90 mb-6">
+          <span class="h-2 w-2 rounded-full bg-emerald-300 animate-pulse"></span>
+          Mumbai, India
+        </div>
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight md:leading-tight">
+          Hello, World! I'm Tayyaba
+          <span class="block mt-3 text-xl md:text-2xl lg:text-3xl font-medium text-emerald-100/90">
+            I build, break and fix stuff, and write things people actually want to read! :)
+          </span>
+        </h1>
+        <div class="mt-8 flex flex-wrap gap-3 text-sm text-emerald-50/70">
+          <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">Frontend Developer</span>
+          <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">Content Writer</span>
+          <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">SaaS-style UI Builder</span>
+        </div>
+      </div>
+          <div class="lg:col-span-5 reveal">
+            <div class="glass relative rounded-[2rem] p-5 md:p-6 shadow-glow overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-emerald-400/12 via-transparent to-transparent"></div>
+              <div class="relative rounded-[1.5rem] border border-white/8 bg-black/35 p-4 md:p-5">
+                <div class="flex items-center justify-between mb-4">
+                  <div>
+                    <div class="text-xs uppercase tracking-[0.3em] text-emerald-200/70">About</div>
+                    <div class="text-2xl font-semibold mt-1">Me</div>
+                  </div>
+                  <div class="h-12 w-12 rounded-2xl bg-emerald-400/15 border border-emerald-400/20 grid place-items-center">
+                    <div class="h-5 w-5 rounded-full bg-emerald-300 animate-pulse"></div>
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="rounded-2xl bg-white/5 border border-white/8 p-4">
+                    <div class="text-xs text-emerald-100/60">Focus</div>
+                    <div class="mt-1 font-medium">Frontend + Content</div>
+                  </div>
+                  <div class="rounded-2xl bg-white/5 border border-white/8 p-4">
+                    <div class="text-xs text-emerald-100/60">City</div>
+                    <div class="mt-1 font-medium">Mumbai</div>
+                  </div>
+                  <div class="rounded-2xl bg-white/5 border border-white/8 p-4 col-span-2">
+                    <div class="text-xs text-emerald-100/60">Signature</div>
+                    <div class="mt-1 font-medium">Premium interfaces with strong storytelling</div>
+                  </div>
+                </div>
+                <div class="mt-5 h-56 rounded-[1.25rem] border border-emerald-400/15 bg-[radial-gradient(circle_at_top,rgba(16,185,129,0.22),transparent_52%),linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] flex items-end justify-between p-4 overflow-hidden">
+                  <div class="space-y-2">
+                    <div class="text-xs uppercase tracking-[0.28em] text-emerald-100/60">Mini OS</div>
+                    <div class="text-xl font-semibold">Browser-based operating system</div>
+                    <div class="text-sm text-emerald-50/70 max-w-xs">A showcase of product design, interaction polish, and front-end engineering.</div>
+                  </div>
+                  <div class="w-28 h-28 rounded-3xl bg-black/30 border border-white/10 backdrop-blur-md grid place-items-center animate-floaty">
+                    <div class="text-emerald-300 text-3xl">◉</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</section>
+<section class="max-w-7xl mx-auto px-5 md:px-8 py-12 md:py-20">
+  <div class="reveal glass rounded-[2rem] p-8 md:p-10 border border-white/8">
+    <div class="text-sm uppercase tracking-[0.3em] text-emerald-200/60">
+      About
+    </div>
+    <h2 class="mt-3 text-3xl md:text-5xl font-semibold tracking-tight">
+      Frontend Developer & Content Writer
+    </h2>
+    <p class="mt-6 text-emerald-50/70 leading-8 max-w-4xl">
+      BSc IT student focused on building polished interfaces, experimenting
+      with creative web projects, and writing content that is clear,
+      engaging, and useful. My work combines frontend development,
+      product thinking, and storytelling.
+    </p>
+  </div>
+</section>
+<section class="max-w-7xl mx-auto px-5 md:px-8 pb-12 md:pb-20">
+  <div class="reveal mb-10">
+    <div class="text-sm uppercase tracking-[0.3em] text-emerald-200/60">
+      Explore
+    </div>
+    <h2 class="mt-2 text-3xl md:text-5xl font-semibold tracking-tight">
+      Quick Navigation
+    </h2>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+    <a href="projects.html" class="glass rounded-[2rem] p-6 border border-white/8 hover:border-emerald-400/30 transition reveal">
+      <div class="text-3xl">🖳</div>
+      <h3 class="mt-4 text-xl font-semibold">Projects</h3>
+      <p class="mt-2 text-emerald-50/70">Mini OS, SpotDemo, Budget Tracker and more.</p>
+    </a>
+    <a href="skills.html" class="glass rounded-[2rem] p-6 border border-white/8 hover:border-emerald-400/30 transition reveal">
+      <div class="text-3xl">⚡︎</div>
+      <h3 class="mt-4 text-xl font-semibold">Skills</h3>
+      <p class="mt-2 text-emerald-50/70">Technical, creative and build-focused abilities.</p>
+    </a>
+    <a href="blogs.html" class="glass rounded-[2rem] p-6 border border-white/8 hover:border-emerald-400/30 transition reveal">
+      <div class="text-3xl">🖋</div>
+      <h3 class="mt-4 text-xl font-semibold">Blogs</h3>
+      <p class="mt-2 text-emerald-50/70">Writing, articles and published content.</p>
+    </a>
+    <a href="contact.html" class="glass rounded-[2rem] p-6 border border-white/8 hover:border-emerald-400/30 transition reveal">
+      <div class="text-3xl">☏</div>
+      <h3 class="mt-4 text-xl font-semibold">Contact</h3>
+      <p class="mt-2 text-emerald-50/70">Let's build something cool together.</p>
+    </a>
+  </div>
+</section>
+<section class="max-w-7xl mx-auto px-5 md:px-8 pb-16 md:pb-24">
+  <div class="grid lg:grid-cols-3 gap-5">
+    <div class="glass rounded-[2rem] p-6 border border-white/8 reveal">
+      <div class="text-emerald-300 text-sm uppercase tracking-[0.25em]">
+        Projects
+      </div>
+      <div class="mt-3 text-4xl font-semibold">
+        5+
+      </div>
+      <p class="mt-3 text-emerald-50/70">
+        Frontend experiments and web applications.
+      </p>
+    </div>
+    <div class="glass rounded-[2rem] p-6 border border-white/8 reveal">
+      <div class="text-emerald-300 text-sm uppercase tracking-[0.25em]">
+        Experience
+      </div>
+      <div class="mt-3 text-4xl font-semibold">
+        3
+      </div>
+      <p class="mt-3 text-emerald-50/70">
+        Content writing internships and collaborations.
+      </p>
+    </div>
+    <div class="glass rounded-[2rem] p-6 border border-white/8 reveal">
+      <div class="text-emerald-300 text-sm uppercase tracking-[0.25em]">
+        Focus
+      </div>
+      <div class="mt-3 text-2xl font-semibold">
+        UI + Content
+      </div>
+      <p class="mt-3 text-emerald-50/70">
+        Building interfaces and crafting meaningful content.
+      </p>
+    </div>
+  </div>
+</section>
+</main>
+<script src="main.js"></script>
+</body>
+</html>
