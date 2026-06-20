@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            emeraldDeep: {
+              950: '#02140d',
+              900: '#041b12',
+              800: '#07261a',
+              700: '#0b3524',
+              600: '#0f4a32',
+              500: '#11b56b'
+            }
+          },
+          boxShadow: {
+            glow: '0 0 0 1px rgba(16,185,129,0.18), 0 20px 80px rgba(0,0,0,0.45), 0 0 40px rgba(16,185,129,0.12)'
+          },
+          keyframes: {
+            floaty: {
+              '0%,100%': { transform: 'translateY(0px) translateX(0px)' },
+              '50%': { transform: 'translateY(-12px) translateX(6px)' }
+            },
+            pulseGlow: {
+              '0%,100%': { opacity: '0.55', transform: 'scale(1)' },
+              '50%': { opacity: '0.9', transform: 'scale(1.08)' }
+            },
+            drift: {
+              '0%': { transform: 'translate3d(0,0,0)' },
+              '50%': { transform: 'translate3d(20px,-18px,0)' },
+              '100%': { transform: 'translate3d(0,0,0)' }
+            }
+          },
+          animation: {
+            floaty: 'floaty 7s ease-in-out infinite',
+            pulseGlow: 'pulseGlow 4s ease-in-out infinite',
+            drift: 'drift 12s ease-in-out infinite'
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="font-sans selection:bg-emerald-400/30 selection:text-white">
+
+<div class="fixed inset-0 pointer-events-none grid-bg opacity-30"></div>
+
+<header class="sticky top-0 z-40 border-b border-white/8 bg-black/25 backdrop-blur-xl">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="flex items-center justify-between py-4">
+
+      <a href="index.html" class="text-left">
+        <div class="text-lg md:text-xl font-semibold tracking-tight">
+          Tayyaba Shaikh
+        </div>
+        <div class="text-xs text-emerald-200/70">
+          Frontend Developer • Content Writer • BSc IT
+        </div>
+      </a>
+
+      <nav class="flex flex-wrap items-center justify-end gap-4 md:gap-7 text-sm text-emerald-50/80">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="skills.html">Skills</a>
+        <a class="nav-link" href="journey.html">Journey</a>
+        <a class="nav-link" href="facts.html">Facts</a>
+        <a class="nav-link" href="links.html">Links</a>
+        <a class="nav-link" href="blogs.html">Blogs</a>
+        <a class="nav-link" href="certificates.html">Certificates</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-24">
+
+  <div class="reveal glass rounded-[2.25rem] p-6 md:p-10 border border-emerald-400/15 shadow-glow relative overflow-hidden">
+
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(16,185,129,0.18),transparent_45%)]"></div>
+
+    <div class="relative grid lg:grid-cols-12 gap-8 items-start">
+
+      <div class="lg:col-span-5">
+
+        <div class="text-sm uppercase tracking-[0.3em] text-emerald-200/60">
+          Contact
+        </div>
+
+        <h2 class="mt-2 text-3xl md:text-5xl font-semibold tracking-tight">
+          Let’s build something cool.
+        </h2>
+
+        <p class="mt-4 text-emerald-50/70 leading-7">
+          Open to frontend, content, and product-focused collaborations.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <button
+            onclick="window.location.href='mailto:myth5901@gmail.com'"
+            class="rounded-full bg-emerald-400 px-6 py-3 font-medium text-black hover:bg-emerald-300 transition">
+            Email Me
+          </button>
+        </div>
+
+        <div class="mt-6 flex flex-wrap gap-3 text-sm text-emerald-50/75">
+
+          <button
+            onclick="openProject('mailto:myth5901@gmail.com')"
+            class="rounded-full border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10 transition">
+            Email
+          </button>
+
+          <button
+            onclick="openProject('https://www.linkedin.com/in/tayyaba590')"
+            class="rounded-full border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10 transition">
+            LinkedIn
+          </button>
+
+          <button
+            onclick="openProject('https://github.com/notthatslayer')"
+            class="rounded-full border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10 transition">
+            GitHub
+          </button>
+
+          <button
+            onclick="openProject('https://dev.to/deffslayer')"
+            class="rounded-full border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10 transition">
+            Dev.to
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="lg:col-span-7">
+
+        <form
+          id="contactForm"
+          action="https://formsubmit.co/myth5901@gmail.com"
+          method="POST"
+          class="grid gap-4 glass rounded-[1.5rem] p-5 border border-white/8">
+
+          <div class="grid md:grid-cols-2 gap-4">
+
+            <input
+              id="contactName"
+              name="name"
+              required
+              class="rounded-2xl bg-black/30 border border-white/10 px-4 py-3 outline-none focus:border-emerald-400/40"
+              placeholder="Your name">
+
+            <input
+              id="contactEmail"
+              name="email"
+              type="email"
+              required
+              class="rounded-2xl bg-black/30 border border-white/10 px-4 py-3 outline-none focus:border-emerald-400/40"
+              placeholder="Your email">
+
+          </div>
+
+          <input
+            id="contactSubject"
+            name="subject"
+            required
+            class="rounded-2xl bg-black/30 border border-white/10 px-4 py-3 outline-none focus:border-emerald-400/40"
+            placeholder="Subject">
+
+          <textarea
+            id="contactMessage"
+            name="message"
+            required
+            rows="5"
+            class="rounded-2xl bg-black/30 border border-white/10 px-4 py-3 outline-none focus:border-emerald-400/40"
+            placeholder="Tell me about your idea..."></textarea>
+
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Portfolio Contact Form">
+
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+
+            <div class="text-sm text-emerald-50/60">
+              My Email ID: myth5901@gmail.com
+            </div>
+
+            <button
+              type="submit"
+              class="rounded-full bg-emerald-400 px-6 py-3 font-medium text-black hover:bg-emerald-300 transition">
+              Send Message
+            </button>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<button
+  id="floatingBtn"
+  class="floating-btn showing rounded-full bg-emerald-400 px-5 py-3 font-medium text-black hover:bg-emerald-300 transition shadow-lg shadow-emerald-500/20">
+  Email
+</button>
+
+</main>
+
+<script src="main.js"></script>
+
+</body>
+</html>
