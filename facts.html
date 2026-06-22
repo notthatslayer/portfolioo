@@ -2,9 +2,7 @@
 <html>
 <head>
   <title>Facts</title>
-
   <script src="https://cdn.tailwindcss.com"></script>
-
   <script>
     tailwind.config = {
       theme: {
@@ -21,46 +19,18 @@
               600: '#0f4a32',
               500: '#11b56b'
             }
-          },
-          boxShadow: {
-            glow: '0 0 0 1px rgba(16,185,129,0.18), 0 20px 80px rgba(0,0,0,0.45), 0 0 40px rgba(16,185,129,0.12)'
-          },
-          keyframes: {
-            floaty: {
-              '0%,100%': { transform: 'translateY(0px) translateX(0px)' },
-              '50%': { transform: 'translateY(-12px) translateX(6px)' }
-            },
-            pulseGlow: {
-              '0%,100%': { opacity: '0.55', transform: 'scale(1)' },
-              '50%': { opacity: '0.9', transform: 'scale(1.08)' }
-            },
-            drift: {
-              '0%': { transform: 'translate3d(0,0,0)' },
-              '50%': { transform: 'translate3d(20px,-18px,0)' },
-              '100%': { transform: 'translate3d(0,0,0)' }
-            }
-          },
-          animation: {
-            floaty: 'floaty 7s ease-in-out infinite',
-            pulseGlow: 'pulseGlow 4s ease-in-out infinite',
-            drift: 'drift 12s ease-in-out infinite'
           }
         }
       }
     }
   </script>
-
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body class="font-sans selection:bg-emerald-400/30 selection:text-white">
-
 <div class="fixed inset-0 pointer-events-none grid-bg opacity-30"></div>
-
 <header class="sticky top-0 z-40 border-b border-white/8 bg-black/25 backdrop-blur-xl">
   <div class="max-w-7xl mx-auto px-5 md:px-8">
     <div class="flex items-center justify-between py-4">
-
       <a href="index.html" class="text-left">
         <div class="text-lg md:text-xl font-semibold tracking-tight">
           Tayyaba Shaikh
@@ -69,7 +39,6 @@
           Frontend Developer • Content Writer • BSc IT
         </div>
       </a>
-
       <nav class="flex flex-wrap items-center justify-end gap-4 md:gap-7 text-sm text-emerald-50/80">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="projects.html">Projects</a>
@@ -81,64 +50,51 @@
         <a class="nav-link" href="certificates.html">Certificates</a>
         <a class="nav-link" href="contact.html">Contact</a>
       </nav>
-
     </div>
   </div>
 </header>
-
-<main>
-
+<main class="min-h-screen">
 <section class="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-24">
-
   <div class="reveal mb-10">
     <div class="text-sm uppercase tracking-[0.3em] text-emerald-200/60">
       A little about what I've made :)
     </div>
-
     <h2 class="mt-2 text-3xl md:text-5xl font-semibold tracking-tight">
-       Experiments and builds
+      Experiments and builds
     </h2>
   </div>
-
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="fact-card reveal glass rounded-[1.5rem] p-5 transition duration-300">
+      𖦏
+      <div class="mt-3 text-xl font-semibold">Red Light, Green Light</div>
+    </div>
     <div class="fact-card reveal glass rounded-[1.5rem] p-5 transition duration-300">
       🖳
       <div class="mt-3 text-xl font-semibold">Mini OS</div>
     </div>
-
     <div class="fact-card reveal glass rounded-[1.5rem] p-5 transition duration-300">
       ♫
       <div class="mt-3 text-xl font-semibold">SpotDemo</div>
     </div>
-
     <div class="fact-card reveal glass rounded-[1.5rem] p-5 transition duration-300">
       ◡̈
       <div class="mt-3 text-xl font-semibold">Venting Platform</div>
     </div>
-
     <div class="fact-card reveal glass rounded-[1.5rem] p-5 transition duration-300">
       ⛃⛂
       <div class="mt-3 text-xl font-semibold">Budget Tracker</div>
     </div>
-
     <div class="fact-card reveal glass rounded-[1.5rem] p-5 transition duration-300">
       🖩
       <div class="mt-3 text-xl font-semibold">Calculator</div>
     </div>
-
     <div class="fact-card reveal glass rounded-[1.5rem] p-5 transition duration-300">
       ⚝
       <div class="mt-3 text-xl font-semibold">MakeCode, block coding, Adafruit</div>
     </div>
-
   </div>
-
 </section>
-
 </main>
-
 <script src="main.js"></script>
-
 </body>
 </html>
