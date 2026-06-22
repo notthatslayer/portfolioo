@@ -27,78 +27,91 @@
       }
     }
   </script>
-
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="font-sans selection:bg-emerald-400/30 selection:text-white">
-<div class="fixed inset-0 pointer-events-none grid-bg opacity-30"></div>
-<header class="sticky top-0 z-40 border-b border-white/8 bg-black/25 backdrop-blur-xl">
-  <div class="max-w-7xl mx-auto px-5 md:px-8">
-    <div class="flex items-center justify-between py-4">
-      <a href="index.html">
-        <div class="text-lg font-semibold">Tayyaba Shaikh</div>
-        <div class="text-xs text-emerald-200/70">Frontend Developer • Content Writer • BSc IT</div>
-      </a>
-      <nav class="flex gap-6 text-sm text-emerald-50/80">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="journey.html">Journey</a>
-        <a href="facts.html">Facts</a>
-        <a href="links.html">Links</a>
-        <a href="blogs.html">Blogs</a>
-        <a href="certificates.html">Certificates</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+<body class="font-sans selection:bg-emerald-400/30 selection:text-white relative">
+  <div class="fixed inset-0 pointer-events-none opacity-20"
+       style="
+         background-image:
+           linear-gradient(rgba(34,197,94,0.06) 1px, transparent 1px),
+           linear-gradient(90deg, rgba(34,197,94,0.06) 1px, transparent 1px);
+         background-size: 42px 42px; ">
   </div>
-</header>
-<main class="max-w-7xl mx-auto px-5 md:px-8 py-16">
-  <h2 class="text-4xl font-semibold mb-10">Projects</h2>
-  <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
-    <div class="project-card glass rounded-2xl p-5">
-      <h3 class="text-xl font-semibold">Mini OS</h3>
-      <p class="text-emerald-50/70 mt-2">Browser-based operating system concept.</p>
-      <button onclick="window.open('https://notthatslayer.github.io/Mini-OS/')" class="mt-4 px-4 py-2 bg-emerald-400 text-black rounded-full">
-        Live Link
-      </button>
+  <header class="sticky top-0 z-40 border-b border-white/8 bg-black/25 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
+      <div class="flex items-center justify-between py-4">
+        <a href="index.html">
+          <div class="text-lg font-semibold">Tayyaba Shaikh</div>
+          <div class="text-xs text-emerald-200/70">
+            Frontend Developer • Content Writer • BSc IT
+          </div>
+        </a>
+        <nav class="flex gap-6 text-sm text-emerald-50/80">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="skills.html">Skills</a>
+          <a href="journey.html">Journey</a>
+          <a href="facts.html">Facts</a>
+          <a href="links.html">Links</a>
+          <a href="blogs.html">Blogs</a>
+          <a href="certificates.html">Certificates</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </div>
-    <div class="project-card glass rounded-2xl p-5">
-      <h3 class="text-xl font-semibold">SpotDemo</h3>
-      <p class="text-emerald-50/70 mt-2">Music player UI concept.</p>
-      <button onclick="window.open('https://notthatslayer.github.io/spotdemo/')" class="mt-4 px-4 py-2 bg-emerald-400 text-black rounded-full">
-        Live Link
-      </button>
+  </header>
+  <main class="relative z-10 max-w-7xl mx-auto px-5 md:px-8 py-16">
+    <h2 class="text-4xl font-semibold mb-10">Projects</h2>
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
+      <div class="project-card glass rounded-2xl p-5">
+        <h3 class="text-xl font-semibold">Mini OS</h3>
+        <p class="text-emerald-50/70 mt-2">Browser-based operating system concept.</p>
+        <button onclick="window.open('https://notthatslayer.github.io/Mini-OS/')"
+          class="mt-4 px-4 py-2 bg-emerald-400 text-black rounded-full">
+          Live Link
+        </button>
+      </div>
+      <div class="project-card glass rounded-2xl p-5">
+        <h3 class="text-xl font-semibold">SpotDemo</h3>
+        <p class="text-emerald-50/70 mt-2">Music player UI concept.</p>
+        <button onclick="window.open('https://notthatslayer.github.io/spotdemo/')"
+          class="mt-4 px-4 py-2 bg-emerald-400 text-black rounded-full">
+          Live Link
+        </button>
+      </div>
+      <div class="project-card glass rounded-2xl p-5">
+        <h3 class="text-xl font-semibold">Venting Platform</h3>
+        <p class="text-emerald-50/70 mt-2">Anonymous message sharing platform.</p>
+        <button onclick="window.open('https://notthatslayer.github.io/Venting-Platform/')"
+          class="mt-4 px-4 py-2 bg-emerald-400 text-black rounded-full">
+          Live Link
+        </button>
+      </div>
+      <div class="project-card glass rounded-2xl p-5">
+        <h3 class="text-xl font-semibold">Budget Tracker</h3>
+        <p class="text-emerald-50/70 mt-2">Personal finance tracker.</p>
+        <button onclick="window.open('https://notthatslayer.github.io/Budget-Tracker/')"
+          class="mt-4 px-4 py-2 bg-emerald-400 text-black rounded-full">
+          Live Link
+        </button>
+      </div>
+      <div class="project-card glass rounded-2xl p-5">
+        <h3 class="text-xl font-semibold">Calculator</h3>
+        <p class="text-emerald-50/70 mt-2">Simple utility calculator.</p>
+        <button onclick="window.open('https://notthatslayer.github.io/Calculator/')"
+          class="mt-4 px-4 py-2 bg-emerald-400 text-black rounded-full">
+          Live Link
+        </button>
+      </div>
+      <div class="project-card glass rounded-2xl p-5">
+        <h3 class="text-xl font-semibold">Red Light, Green Light</h3>
+        <p class="text-emerald-50/70 mt-2">Squid Game inspired browser game clone.</p>
+        <button onclick="window.open('https://notthatslayer.github.io/red-green-light/')"
+          class="mt-4 px-4 py-2 bg-emerald-400 text-black rounded-full">
+          Live Link
+        </button>
+      </div>
     </div>
-    <div class="project-card glass rounded-2xl p-5">
-      <h3 class="text-xl font-semibold">Venting Platform</h3>
-      <p class="text-emerald-50/70 mt-2">Anonymous message sharing platform.</p>
-      <button onclick="window.open('https://notthatslayer.github.io/Venting-Platform/')" class="mt-4 px-4 py-2 bg-emerald-400 text-black rounded-full">
-        Live Link
-      </button>
-    </div>
-    <div class="project-card glass rounded-2xl p-5">
-      <h3 class="text-xl font-semibold">Budget Tracker</h3>
-      <p class="text-emerald-50/70 mt-2">Personal finance tracker.</p>
-      <button onclick="window.open('https://notthatslayer.github.io/Budget-Tracker/')" class="mt-4 px-4 py-2 bg-emerald-400 text-black rounded-full">
-        Live Link
-      </button>
-    </div>
-    <div class="project-card glass rounded-2xl p-5">
-      <h3 class="text-xl font-semibold">Calculator</h3>
-      <p class="text-emerald-50/70 mt-2">Simple utility calculator.</p>
-      <button onclick="window.open('https://notthatslayer.github.io/Calculator/')" class="mt-4 px-4 py-2 bg-emerald-400 text-black rounded-full">
-        Live Link
-      </button>
-    </div>
-    <div class="project-card glass rounded-2xl p-5">
-      <h3 class="text-xl font-semibold">Red Light, Green Light</h3>
-      <p class="text-emerald-50/70 mt-2">Squid Game inspired browser game clone.</p>
-      <button onclick="window.open('https://notthatslayer.github.io/red-green-light/')" class="mt-4 px-4 py-2 bg-emerald-400 text-black rounded-full">
-        Live Link
-      </button>
-    </div>
-  </div>
-</main>
+  </main>      
 </body>
 </html>
