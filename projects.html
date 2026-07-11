@@ -2,7 +2,9 @@
 <html>
 <head>
   <title>Projects</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script>
     tailwind.config = {
       theme: {
@@ -24,275 +26,406 @@
       }
     }
   </script>
+
   <link rel="stylesheet" href="styles.css">
+
 </head>
+
+
 <body class="font-sans selection:bg-emerald-400/30 selection:text-white">
+
+
 <div class="fixed inset-0 pointer-events-none grid-bg opacity-30"></div>
+
+
 <header class="sticky top-0 z-40 border-b border-white/8 bg-black/25 backdrop-blur-xl">
-<div class="max-w-7xl mx-auto px-5 md:px-8">
-<div class="flex items-center justify-between py-4">
 
-<a href="index.html">
-<div class="text-lg md:text-xl font-semibold tracking-tight">
-Tayyaba Shaikh
-</div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
 
-<div class="text-xs text-emerald-200/70">
-Frontend Developer • Content Writer • BSc IT
-</div>
-  
-</a>
-<nav class="flex flex-wrap items-center justify-end gap-4 md:gap-7 text-sm text-emerald-50/80">
-<a class="nav-link" href="index.html">Home</a> 
-<a class="nav-link" href="projects.html">Projects</a> 
-<a class="nav-link" href="skills.html">Skills</a> 
-<a class="nav-link" href="journey.html">Journey</a> 
-<a class="nav-link" href="facts.html">Facts</a> 
-<a class="nav-link" href="links.html">Links</a> 
-<a class="nav-link" href="blogs.html">Blogs</a> 
-<a class="nav-link" href="certificates.html">Certificates</a> 
-<a class="nav-link" href="contact.html">Contact</a>
-</nav>
-</div>
-</div>
+    <div class="flex items-center justify-between py-4">
+
+
+      <a href="index.html">
+
+        <div class="text-lg md:text-xl font-semibold tracking-tight">
+          Tayyaba Shaikh
+        </div>
+
+        <div class="text-xs text-emerald-200/70">
+          Frontend Developer • Content Writer • BSc IT
+        </div>
+
+      </a>
+
+
+      <nav class="flex flex-wrap items-center justify-end gap-4 md:gap-7 text-sm text-emerald-50/80">
+
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="skills.html">Skills</a>
+        <a class="nav-link" href="journey.html">Journey</a>
+        <a class="nav-link" href="facts.html">Facts</a>
+        <a class="nav-link" href="links.html">Links</a>
+        <a class="nav-link" href="blogs.html">Blogs</a>
+        <a class="nav-link" href="certificates.html">Certificates</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+
+      </nav>
+
+
+    </div>
+
+  </div>
 
 </header>
 
-<main class="max-w-7xl mx-auto px-5 md:px-8 py-16">
 
-<section>
 
-<div class="reveal mb-12">
+<main class="min-h-screen">
+
+
+<section class="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-24">
+
+
+<div class="reveal mb-10">
 
 <div class="text-sm uppercase tracking-[0.3em] text-emerald-200/60">
 Projects
 </div>
 
-<h1 class="mt-3 text-3xl md:text-5xl font-semibold tracking-tight">
-Things I've built and experimented with.
-</h1>
 
-<p class="mt-5 max-w-3xl text-emerald-50/70 leading-7">
-A collection of frontend experiments, creative builds, and interactive web projects.
-Click any project to explore the details.
-</p>
+<h2 class="mt-2 text-3xl md:text-5xl font-semibold tracking-tight">
+Things I've built while learning, experimenting, and creating.
+</h2>
+
 
 </div>
 
-<div id="projectGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
+
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+
+
+<div onclick="openProjectModal(0)"
+class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
+
+
+<img src="" class="h-48 w-full object-cover bg-white/5">
+
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold">
+Budget Tracker
+</h3>
+
+
+<p class="text-white/60 mt-3">
+A simple finance tracking application to manage expenses and understand spending habits.
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div onclick="openProjectModal(1)"
+class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10">
+
+
+<img src="" class="h-48 w-full object-cover bg-white/5">
+
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold">
+Calculator
+</h3>
+
+
+<p class="text-white/60 mt-3">
+A clean calculator application built while practicing JavaScript logic and UI interactions.
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div onclick="openProjectModal(2)"
+class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10">
+
+
+<img src="" class="h-48 w-full object-cover bg-white/5">
+
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold">
+Venting Platform
+</h3>
+
+
+<p class="text-white/60 mt-3">
+A temporary messaging platform where messages disappear after a minute.
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div onclick="openProjectModal(3)"
+class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10">
+
+
+<img src="" class="h-48 w-full object-cover bg-white/5">
+
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold">
+SpotDemo
+</h3>
+
+
+<p class="text-white/60 mt-3">
+A music-based project exploring interfaces and interactive experiences.
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div onclick="openProjectModal(4)"
+class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10">
+
+
+<img src="" class="h-48 w-full object-cover bg-white/5">
+
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold">
+Mini OS
+</h3>
+
+
+<p class="text-white/60 mt-3">
+A tiny operating system simulation running completely inside the browser.
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div onclick="openProjectModal(5)"
+class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10">
+
+
+<img src="" class="h-48 w-full object-cover bg-white/5">
+
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold">
+Red Light, Green Light
+</h3>
+
+
+<p class="text-white/60 mt-3">
+A small interactive game inspired by the classic challenge.
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div onclick="openProjectModal(6)"
+class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10">
+
+
+<img src="" class="h-48 w-full object-cover bg-white/5">
+
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold">
+Just One More Block
+</h3>
+<p class="text-white/60 mt-3">
+A satisfying stack game built with HTML Canvas.
+</p>
+</div>
+</div>
+
+<div onclick="openProjectModal(7)"
+class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10">
+
+<img src="" class="h-48 w-full object-cover bg-white/5">
+
+<div class="p-6">
+<h3 class="text-xl font-semibold">
+EarBliss
+</h3>
+<p class="text-white/60 mt-3">
+An ongoing project currently under development.
+</p>
+</div>
+</div>
+</div>
 </section>
-
 </main>
 
 <div id="projectModal"
-class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-xl items-center justify-center p-6">
-
-<div class="glass max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-[2rem] p-6 md:p-8 border border-white/10 relative">
-
+class="hidden fixed inset-0 bg-black/70 backdrop-blur-xl flex items-center justify-center p-6 z-50">
+<div class="glass max-w-3xl w-full rounded-3xl p-8 border border-white/10 relative">
 <button onclick="closeProjectModal()"
-class="absolute right-6 top-5 text-3xl text-white/60 hover:text-white">
-× </button>
-
-<img id="modalImage"
-src=""
-class="w-full h-64 object-cover rounded-2xl mb-6 border border-white/10">
-
-<h2 id="modalTitle"
-class="text-3xl font-semibold">
-</h2>
-
-<p id="modalDescription"
-class="mt-4 text-emerald-50/70 leading-7">
-</p>
-
-<div class="mt-6">
-
-<h3 class="text-sm uppercase tracking-[0.3em] text-emerald-300">
-Tech Stack
-</h3>
-
-<p id="modalTech"
-class="mt-2 text-white/80">
-</p>
-
+class="absolute top-4 right-5 text-white/70 text-2xl">
+✕
+</button>
+<div id="projectContent"
+class="space-y-5 text-white/80">
 </div>
-
-<a id="modalLink"
-target="_blank"
-class="inline-block mt-8 rounded-full bg-emerald-400 px-6 py-3 text-black font-medium hover:bg-emerald-300 transition">
-
-Open Project
-
-</a>
-
 </div>
-
 </div>
-
 <script>
 
-
 const projects = [
+{
+title:"Budget Tracker",
+desc:"A simple application to track expenses and manage personal budgets.",
+stack:"HTML, CSS, JavaScript",
+link:""
+},
+
+
+{
+title:"Calculator",
+desc:"A calculator project focused on JavaScript logic and interactive UI.",
+stack:"HTML, CSS, JavaScript",
+link:""
+},
+
+
+{
+title:"Venting Platform",
+desc:"A temporary messaging platform where messages disappear after one minute.",
+stack:"HTML, CSS, JavaScript",
+link:"https://notthatslayer.github.io/Venting-Platform/"
+},
+
+
+{
+title:"SpotDemo",
+desc:"A music-inspired project exploring interactive web experiences.",
+stack:"HTML, CSS, JavaScript",
+link:""
+},
+
 
 {
 title:"Mini OS",
-image:"",
-short:"A browser-based operating system experience built with JavaScript.",
-description:
-"A desktop-like operating system simulation inside the browser. Includes draggable windows, apps, taskbar, terminal, notepad, calculator and more.",
-tech:"HTML, CSS, JavaScript, LocalStorage",
+desc:"A tiny operating system simulation built inside the browser with desktop-like features.",
+stack:"HTML, CSS, JavaScript",
 link:"https://notthatslayer.github.io/Mini-OS/"
 },
 
 
 {
 title:"Red Light, Green Light",
-image:"",
-short:"A Squid Game inspired interactive browser game.",
-description:
-"A fun browser game experiment focused on animations, user interaction and timing mechanics.",
-tech:"HTML, CSS, JavaScript",
-link:"https://notthatslayer.github.io/red-green-light/"
+desc:"An interactive game project inspired by the classic challenge.",
+stack:"HTML, CSS, JavaScript",
+link:""
 },
 
 
 {
-title:"SpotDemo",
-image:"",
-short:"A music player UI concept inspired by modern streaming apps.",
-description:
-"A frontend interface experiment focused on creating a clean music application experience with modern layouts.",
-tech:"HTML, CSS, JavaScript",
-link:"https://notthatslayer.github.io/spotdemo/"
+title:"Just One More Block",
+desc:"A satisfying stack game built with HTML Canvas.",
+stack:"HTML Canvas, Vanilla JavaScript",
+link:"https://notthatslayer.github.io/stack/"
 },
 
-
 {
-title:"Venting Platform",
-image:"",
-short:"An anonymous temporary message sharing platform.",
-description:
-"A platform where users can write messages that disappear automatically after a short time. Built as an experiment with interaction and timers.",
-tech:"HTML, CSS, JavaScript",
-link:"https://notthatslayer.github.io/Venting-Platform/"
-},
-
-
-{
-title:"Budget Tracker",
-image:"",
-short:"A simple personal finance tracking application.",
-description:
-"A small productivity tool designed to track expenses and manage basic financial information.",
-tech:"HTML, CSS, JavaScript",
-link:"https://notthatslayer.github.io/Budget-Tracker/"
-},
-
-
-{
-title:"Calculator",
-image:"",
-short:"A lightweight browser calculator.",
-description:
-"A simple utility project created to practice JavaScript logic and interface design.",
-tech:"HTML, CSS, JavaScript",
-link:"https://notthatslayer.github.io/Calculator/"
+title:"EarBliss",
+desc:"An ongoing project currently under development.",
+stack:"Coming soon",
+link:""
 }
-
 ];
-
-
-
-const grid=document.getElementById("projectGrid");
-
-
-projects.forEach((project,index)=>{
-
-
-grid.innerHTML += `
-
-<div onclick="openProjectModal(${index})"
-class="project-card glass rounded-[2rem] overflow-hidden cursor-pointer border border-white/10 reveal">
-
-
-<div class="h-48 bg-white/5 flex items-center justify-center">
-
-${
-project.image
-?
-`<img src="${project.image}" class="w-full h-full object-cover">`
-:
-`<div class="text-5xl text-emerald-300">◉</div>`
-}
-
-</div>
-
-
-<div class="p-6">
-
-<h2 class="text-xl font-semibold">
+  
+function openProjectModal(index){
+const project = projects[index];
+document.getElementById("projectContent").innerHTML = `
+<h2 class="text-3xl font-semibold">
 ${project.title}
 </h2>
-
-
-<p class="mt-3 text-emerald-50/70">
-${project.short}
+<p>
+${project.desc}
 </p>
-
-
-<div class="mt-5 text-emerald-300 text-sm">
-Click to view →
+<div>
+<span class="text-emerald-300">
+Tech Stack:
+</span>
+${project.stack}
 </div>
-
-
+${
+project.link
+?
+`
+<a href="${project.link}" target="_blank"
+class="inline-block mt-4 rounded-full bg-emerald-400 text-black px-5 py-2">
+Open Project
+</a>
+`
+:
+`
+<div class="text-emerald-200/50">
+Project link coming soon.
 </div>
-
-
-</div>
-
+`
+}
 `;
-
-});
-
-
-
-
-
-function openProjectModal(index){
-
-const project=projects[index];
-
-
-document.getElementById("modalImage").src =
-project.image || "";
-
-
-document.getElementById("modalTitle").innerText =
-project.title;
-
-
-document.getElementById("modalDescription").innerText =
-project.description;
-
-
-document.getElementById("modalTech").innerText =
-project.tech;
-
-
-document.getElementById("modalLink").href =
-project.link;
-
-
-const modal=document.getElementById("projectModal");
-
-modal.classList.remove("hidden");
-modal.classList.add("flex");
+document.getElementById("projectModal")
+.classList.remove("hidden");
 }
 function closeProjectModal(){
-const modal=document.getElementById("projectModal");
-modal.classList.add("hidden");
-modal.classList.remove("flex");
+document.getElementById("projectModal")
+.classList.add("hidden");
 }
 </script>
 <script src="main.js"></script>
