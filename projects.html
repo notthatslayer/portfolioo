@@ -56,15 +56,26 @@
 <h2 class="mt-2 text-3xl md:text-5xl font-semibold tracking-tight">Things I've built while learning, experimenting, and creating.</h2>
 </div>
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    
 <div onclick="openProjectModal(0)"
 class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10">
 <img src="comingsoon.jpeg" class="h-48 w-full object-cover bg-white/5">
 <div class="p-6">
-<h3 class="text-xl font-semibold"> EarBliss </h3>
-<p class="text-white/60 mt-3"> An ongoing project currently under development. </p>
+<h3 class="text-xl font-semibold"> MenuPro </h3>
+<p class="text-white/60 mt-3">A digital retaurant menu and menu management web app.</p>
 </div>
 </div>
+    
 <div onclick="openProjectModal(1)"
+class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10">
+<img src="comingsoon.jpeg" class="h-48 w-full object-cover bg-white/5">
+<div class="p-6">
+<h3 class="text-xl font-semibold"> EarBliss </h3>
+<p class="text-white/60 mt-3">A modern browser-based music player built for your vibe. </p>
+</div>
+</div>
+    
+<div onclick="openProjectModal(2)"
 class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10">
 <img src="block.jpeg" class="h-48 w-full object-cover bg-white/5">
 <div class="p-6">
@@ -77,7 +88,7 @@ A satisfying stack game built with HTML Canvas.
 </div>
 </div>
   
-<div onclick="openProjectModal(2)"
+<div onclick="openProjectModal(3)"
 class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10">
 <img src="rg.jpg" class="h-48 w-full object-cover bg-white/5">
 <div class="p-6">
@@ -90,7 +101,7 @@ A small interactive game inspired by the classic challenge.
 </div>
 </div>
 
-<div onclick="openProjectModal(3)"
+<div onclick="openProjectModal(4)"
 class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10">
 <img src="minios.jpg" class="h-48 w-full object-cover bg-white/5">
 <div class="p-6">
@@ -103,7 +114,7 @@ A tiny operating system simulation running completely inside the browser.
 </div>
 </div>
   
-<div onclick="openProjectModal(4)"
+<div onclick="openProjectModal(5)"
 class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10">
 <img src="spotdemo.jpeg" class="h-48 w-full object-cover bg-white/5">
 <div class="p-6">
@@ -116,7 +127,7 @@ A music-based project exploring interfaces and interactive experiences.
 </div>
 </div>
   
-<div onclick="openProjectModal(5)"
+<div onclick="openProjectModal(6)"
 class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10">
 <img src="dis.webp" class="h-48 w-full object-cover bg-white/5">
 <div class="p-6">
@@ -129,7 +140,7 @@ A temporary messaging platform where messages disappear after a minute.
 </div>
 </div>
   
-<div onclick="openProjectModal(6)"
+<div onclick="openProjectModal(7)"
 class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10">
 <img src="calc.jpeg" class="h-48 w-full object-cover bg-white/5">
 <div class="p-6">
@@ -142,7 +153,7 @@ A clean calculator application built while practicing JavaScript logic and UI in
 </div>
 </div>
 
-<div onclick="openProjectModal(7)"
+<div onclick="openProjectModal(8)"
 class="cursor-pointer project-card glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
 <img src="bt.jpeg" class="h-48 w-full object-cover bg-white/5">
 <div class="p-6">
@@ -174,11 +185,19 @@ class="space-y-5 text-white/80">
 <script>
 
 const projects = [
+
+{
+title:"Menu pro",
+desc:"A restaurant-focused web application for managing menu items and presenting the, through a digital menu.",
+stack:"HTML, CSS, JavaScript, Tailwind CSS",
+link:"https://notthatslayer.github.io/MenuPro/"
+},
+
 {
 title:"EarBliss",
-desc:"An ongoing project currently under development.",
-stack:"Coming soon :)",
-link:""
+desc:"A dark, feature-rich music player with playlists, search, queue, playback controls, visualizer, and more.",
+stack:"HTML, CSS, JavaScript, Tailwind CSS",
+link:"https://notthatslayer.github.io/EarBliss/"
 },
 
 {
