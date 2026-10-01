@@ -72,8 +72,7 @@
         <p class="text-white/60 mt-3">A small experiment with temporary messaging...</p>
       </div>
     </div>
-
-
+    
   </div>
 </main>
 
@@ -181,25 +180,104 @@ Or maybe we've become so good at escaping boredom that we've forgotten it someti
 serves a purpose.</p>
 `
   },
-  {
-    title: "An interactive music player",
-    image: 'EB.jpg',
-    content: ``
-  },
-  
-  {
-    title: "Just One More Block",
-    image: 'block.jpeg',
-    content: ``
-  },
-  
-  {
-    title: "Red Light, Green Light",
-    image: 'rg.jpg',
-    content: `
-    <h1>Get Punished For Pressing Space at the Wrong Time</h1>
+{
+  title: "I Tried Making a Spotify Clone and Ended Up Making This Instead :)",
+  image: "EB.jpg",
+  content: `I originally wanted to make a Spotify clone.
 
-A few days ago, I played Google's Red Light, Green Light game and immediately had the dangerous thought every developer eventually has:
+Somewhere along the way, I stopped trying to make a Spotify clone and started building my own music player.
+
+And that's how <i>EarBliss</i> happened.
+
+EarBliss is a browser-based music player with a dark UI, purple and green accents, rounded cards, a sidebar, playlists, search, queue, a persistent bottom player, playback controls, a visualizer, and a few other things I wanted to experiment with.
+
+The name is basically Ear + Bliss <i>lol</i>
+
+I spent a lot of time deciding how I wanted it to look and behave, fixing things when they broke, choosing the songs, refining the UI, and getting everything ready to actually use.
+
+One thing I really wanted was for it to feel like an actual music player rather than just another UI concept.
+
+So instead of stopping at a pretty interface, I added actual songs and built the player around them.
+
+The final version has 18 songs, with features like:
+
+• Search
+• Recently Played
+• Trending
+• Playlists and library
+• Queue
+• Mini Player
+• Playback controls
+• Playback speed
+• Volume control
+• Visualizer
+• Keyboard shortcuts
+• Album artwork
+• Persistent bottom player
+
+It's definitely not Spotify, and that wasn't really the point anymore.
+
+I mainly wanted to see how far I could take the idea and turn it into something that actually feels like a little music app.
+
+And honestly, I'm pretty happy with where it ended up.
+
+<i>EarBliss is finally ready! :))</i>
+
+Go check it out: <a href="https://notthatslayer.github.io/EarBliss/" target="_blank">Click Here</a>
+
+As always, feedback, bug reports, and suggestions are welcome.
+
+Drop your favorite tracks in the comments and I'll add them to the rotation! :D`
+},
+
+{
+  title: "Just One More Block",
+  image: "block.jpeg",
+  content: `Ever opened a game thinking, "I'll play for just a minute"?
+
+Yeah, that's how this started too.
+
+I recently built <i>Just One More Block</i>, a small browser game inspired by the classic stacking games where every tap decides whether your tower keeps growing, or ends the run ;-;
+
+The idea is simple.
+
+A block moves across the screen. Tap at the right moment to place it. Miss the alignment and the next block becomes smaller.
+
+Miss completely...
+
+<b>Game over.</b>
+
+Nothing revolutionary, just a mechanic that's somehow impossible to stop playing.
+
+I wanted to build something that felt clean and satisfying without relying on frameworks or game engines, so everything is built with plain HTML, CSS, and JavaScript using the Canvas API.
+
+Some things I enjoyed building:
+
+• Smooth camera movement as the tower grows.
+• Blocks that shrink based on how accurate the placement is.
+• Dynamic colors that slowly shift throughout the game.
+• Increasing speed to make later rounds more challenging.
+• A layout that works nicely on both desktop and mobile.
+
+One thing I noticed while testing was that it actually feels better on a phone.
+
+Tapping the screen just feels more natural than pressing the spacebar, so if you do try it, I'd recommend playing it on mobile.
+
+This isn't meant to compete with polished mobile games.
+
+It was simply a fun project that let me practice animation, game loops, collision logic, and making interactions feel satisfying.
+
+If you'd like to try it yourself:
+
+<b>Live Demo: <a href="https://notthatslayer.github.io/stack/" target="_blank">Click here to play</a></b>
+
+I'd love to know your highest score :))`
+},
+  
+{
+  title: "Get Punished For Pressing Space at the Wrong Time",
+  image: "rg.jpg",
+  content: `A few days ago, I played Google's Red Light, Green Light game and immediately had the dangerous thought every developer eventually has:
 
 <i>How hard can it be to build something like this?</i>
 
@@ -255,68 +333,9 @@ So if you decide to try it, I'd love to know:
 
 <b>How many contestants survive under your command? :o</b>
 
-<br>
-
-Live Link: <a href="https://notthatslayer.github.io/red-green-light/" target="_blank">Click Here</a>
-    `
-  },
-  {
-    title: "A Platform Where Messages Self-Destruct After a Minute",
-    image: "dis.webp",
-    content: `Have you ever had a thought you just needed to get out of your head, but also didn't want it sitting around forever?
-
-That idea stuck with me for a while, and a lot of platforms inspired me to create this.
-
-So I built a small website where you can write a message, send it, and it disappears after a minute.
-
-No accounts. No history. No <i>"your message has been saved forever somewhere on the internet"</i>
-
-Just a short moment where it exists, and then it's gone.
-
-Why I made it: The idea wasn't anything complicated.
-
-I just liked the thought of a space where you can say something and not worry about it sticking around.
-
-Most platforms are the opposite of that. Everything is permanent. Everything is stored. Even random thoughts from years ago are still sitting somewhere in a database.
-
-So I wanted to try something different. Something a bit lighter.
-
-How it works: You type a message into a box, hit send, and it appears on the screen as a little bubble.
-
-Then a timer starts.
-
-After 60 seconds, the message disappears automatically.
-
-That's it.
-
-<i>It's built using HTML, CSS, and JavaScript. Nothing fancy.</i>
-
-The main thing I had to figure out was handling the timer properly and making sure messages actually get removed from the page without breaking anything.
-
-At one point during testing, I messed it up and messages were disappearing almost instantly. Which technically worked, just not in a very useful way.
-
-What I learned: This was a small project, but I still learned a few things from it.
-
-Even simple ideas get a bit tricky once you start building them.
-
-Something like "just remove a message after 60 seconds" sounds easy, until you actually have to handle multiple messages, timing, and cleanup properly.
-
-I also realized that tiny interactions change how something feels.
-
-A message that stays forever feels different from one that disappears quickly, even if the actual feature is simple.
-
-Try it out!! ^_^
-
-If you want to test it, here it is: <a href="https://notthatslayer.github.io/Venting-Platform/"> Click Here </a>
-
-Lastly, It's a small project, and it's not trying to be anything big.
-Just something I built while experimenting and learning JavaScript a bit more.
-<u>I'll probably look at it later and think of things I could improve, but okay.</u>
-
-<i>For now, it exists for a minute at a time :)</i>`
-  },
-
-  {
+Live Link: <a href="https://notthatslayer.github.io/red-green-light/" target="_blank">Click Here</a>`
+},
+{
     title: "A Tiny Operating System in the Browser",
     image: "os.webp",
     content: `I Built a Tiny Operating System in the Browser (For Absolutely No Practical Reason T-T)
@@ -376,6 +395,62 @@ I'd genuinely love some feedback! :))
 
 Project link: <a href="https://notthatslayer.github.io/Mini-OS/">Click ME</a>
 (Please use a PC or laptop to use all the features nicely)`
+  },
+
+{
+    title: "A Platform Where Messages Self-Destruct After a Minute",
+    image: "dis.webp",
+    content: `Have you ever had a thought you just needed to get out of your head, but also didn't want it sitting around forever?
+
+That idea stuck with me for a while, and a lot of platforms inspired me to create this.
+
+So I built a small website where you can write a message, send it, and it disappears after a minute.
+
+No accounts. No history. No <i>"your message has been saved forever somewhere on the internet"</i>
+
+Just a short moment where it exists, and then it's gone.
+
+Why I made it: The idea wasn't anything complicated.
+
+I just liked the thought of a space where you can say something and not worry about it sticking around.
+
+Most platforms are the opposite of that. Everything is permanent. Everything is stored. Even random thoughts from years ago are still sitting somewhere in a database.
+
+So I wanted to try something different. Something a bit lighter.
+
+How it works: You type a message into a box, hit send, and it appears on the screen as a little bubble.
+
+Then a timer starts.
+
+After 60 seconds, the message disappears automatically.
+
+That's it.
+
+<i>It's built using HTML, CSS, and JavaScript. Nothing fancy.</i>
+
+The main thing I had to figure out was handling the timer properly and making sure messages actually get removed from the page without breaking anything.
+
+At one point during testing, I messed it up and messages were disappearing almost instantly. Which technically worked, just not in a very useful way.
+
+What I learned: This was a small project, but I still learned a few things from it.
+
+Even simple ideas get a bit tricky once you start building them.
+
+Something like "just remove a message after 60 seconds" sounds easy, until you actually have to handle multiple messages, timing, and cleanup properly.
+
+I also realized that tiny interactions change how something feels.
+
+A message that stays forever feels different from one that disappears quickly, even if the actual feature is simple.
+
+Try it out!! ^_^
+
+If you want to test it, here it is: <a href="https://notthatslayer.github.io/Venting-Platform/"> Click Here </a>
+
+Lastly, It's a small project, and it's not trying to be anything big.
+Just something I built while experimenting and learning JavaScript a bit more.
+<u>I'll probably look at it later and think of things I could improve, but okay.</u>
+
+<i>For now, it exists for a minute at a time :)</i>`
   }
 ];
 
