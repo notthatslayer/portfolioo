@@ -7,9 +7,7 @@
 </head>
 
 <body class="bg-black text-white font-sans">
-
 <div class="fixed inset-0 pointer-events-none grid-bg opacity-30"></div>
-
 <header class="sticky top-0 z-40 bg-black/40 backdrop-blur-xl border-b border-white/10">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between">
     <a href="index.html" class="font-semibold">Tayyaba Shaikh</a>
@@ -28,40 +26,53 @@
 </header>
 
 <main class="max-w-7xl mx-auto px-6 py-16">
-
   <h1 class="text-4xl font-semibold mb-10">Blogs</h1>
-
   <div class="grid md:grid-cols-2 gap-6">
-
+    
     <div onclick="openBlog(0)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
-
       <img src="bored.png" class="h-48 w-full object-cover">
-
       <div class="p-6">
         <h2 class="text-xl font-semibold">Are We Getting Bored More Easily Than Before?</h2>
         <p class="text-white/60 mt-3">A reflection on attention, boredom, and modern digital habits...</p>
       </div>
     </div>
-
-    <div onclick="openBlog(1)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
-
+    
+    <div onclick="openBlog(2)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
+      <img src="EB.jpg" class="h-48 w-full object-cover">
+      <div class="p-6">
+        <h2 class="text-xl font-semibold">I tried making a Spotify clone</h2>
+        <p class="text-white/60 mt-3">But ended up making this instead...</p>
+      </div>
+    </div>
+        <div onclick="openBlog(2)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
+      <img src="block.jpeg" class="h-48 w-full object-cover">
+      <div class="p-6">
+        <h2 class="text-xl font-semibold">Just one more block</h2>
+        <p class="text-white/60 mt-3">Hehe, try again...</p>
+      </div>
+    </div>
+        <div onclick="openBlog(2)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
+      <img src="os.webp" class="h-48 w-full object-cover">
+      <div class="p-6">
+        <h2 class="text-xl font-semibold">Get punished for pressing space at the wrong time</h2>
+        <p class="text-white/60 mt-3">It's not squid game, promise...</p>
+      </div>
+    </div>
+    <div onclick="openBlog(4)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
+      <img src="os.webp" class="h-48 w-full object-cover">
+      <div class="p-6">
+        <h2 class="text-xl font-semibold">Tiny Operating System in Browser</h2>
+        <p class="text-white/60 mt-3">Building a desktop-like system using JavaScript...</p>
+      </div>
+    </div>
+    <div onclick="openBlog(5)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
       <img src="dis.webp" class="h-48 w-full object-cover">
-
       <div class="p-6">
         <h2 class="text-xl font-semibold">Self-Destruct Messages Platform</h2>
         <p class="text-white/60 mt-3">A small experiment with temporary messaging...</p>
       </div>
     </div>
 
-    <div onclick="openBlog(2)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
-
-      <img src="os.webp" class="h-48 w-full object-cover">
-
-      <div class="p-6">
-        <h2 class="text-xl font-semibold">Tiny Operating System in Browser</h2>
-        <p class="text-white/60 mt-3">Building a desktop-like system using JavaScript...</p>
-      </div>
-    </div>
 
   </div>
 </main>
@@ -170,7 +181,85 @@ Or maybe we've become so good at escaping boredom that we've forgotten it someti
 serves a purpose.</p>
 `
   },
+  {
+    title: "An interactive music player",
+    image: 'EB.jpg',
+    content: ``
+  },
+  
+  {
+    title: "Just One More Block",
+    image: 'block.jpeg',
+    content: ``
+  },
+  
+  {
+    title: "Red Light, Green Light",
+    image: 'rg.jpg',
+    content: `
+    <h1>Get Punished For Pressing Space at the Wrong Time</h1>
 
+A few days ago, I played Google's Red Light, Green Light game and immediately had the dangerous thought every developer eventually has:
+
+<i>How hard can it be to build something like this?</i>
+
+As it turns out, harder than I expected T-T
+
+I wasn't trying to recreate Google's version or build a perfect Squid Game clone. I just thought it'd be fun to make my own take on the idea and see how much tension I could create from a single button.
+
+The entire game revolves around one action.
+
+<b>Press Space.</b>
+
+Yeah. That's it.
+
+When the light is green, pressing the spacebar moves your contestants closer to the finish line.
+
+When it's red...
+
+<i>someone gets eliminated.</i>
+
+Simple rules. Terrible consequences ;-;
+
+What surprised me while building it was how quickly such a basic mechanic became genuinely stressful.
+
+When you're watching the game, it feels easy. When you're playing, you're suddenly staring at the screen, waiting for the doll to turn around and wondering:
+
+<i>Should I risk one more move?</i>
+
+That feeling was what I wanted to capture.
+
+The project started as a small experiment but slowly grew into a proper mini game.
+
+I ended up adding animated contestants, a turning doll, randomized red and green phases, sound effects, progress tracking, win and lose screens, mobile support, and a bunch of small visual details that made the whole thing feel more alive.
+
+One of my favorite parts was working on the game flow itself.
+
+The countdown.
+
+The moment the arena lights up.
+
+The switch from green to red.
+
+The instant regret after pressing Space at exactly the wrong time.
+
+Those little interactions ended up being more interesting to build than the movement system itself.
+
+And no, it's definitely not a perfect recreation of Squid Game or Google's version.
+
+It's simply my own interpretation of the classic Red Light, Green Light challenge, built with HTML, CSS, JavaScript, and Tailwind CSS.
+
+The funny thing is that while testing it, I probably eliminated more contestants than any real player ever will.
+
+So if you decide to try it, I'd love to know:
+
+<b>How many contestants survive under your command? :o</b>
+
+<br>
+
+Live Link: <a href="https://notthatslayer.github.io/red-green-light/" target="_blank">Click Here</a>
+    `
+  },
   {
     title: "A Platform Where Messages Self-Destruct After a Minute",
     image: "dis.webp",
